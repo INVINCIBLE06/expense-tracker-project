@@ -10,28 +10,6 @@ It provides RESTful API endpoints to manage user expenses.
 - dotenv
 - cors
 
-## 📁 Project Structure
-
-backend/
-│
-├── controllers/
-│   └── expenseController.js
-│
-├── models/
-│   └── Expense.js
-│
-├── routes/
-│   └── expenseRoutes.js
-│
-├── config/
-│   └── db.js
-│
-├── .env
-├── server.js
-├── package.json
-└── README.md
-
-
 ## ✨ Features
 - Add a new expense
 - Get all expenses
@@ -45,27 +23,22 @@ backend/
 
 git clone https://github.com/your-username/expense-tracker-project.git
 
-
 ### 2. Navigate to the backend folder
 
 cd expense-tracker-project/backend
-
 
 ### 3. Install dependencies
 
 npm install
 
-
 ### 4. Create `.env` file
-Inside the `backend` folder, create a `.env` file:
 
-env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+Inside the `backend` folder, 
+create a `.env` file:
 
-> Replace `your_mongodb_connection_string` with your MongoDB URI.  
-> `JWT_SECRET` is only needed if you implemented user authentication.
+- PORT=5000
+- MONGO_URI= Database connection string
+- JWT_SECRET= Secret Key
 
 ### 5. Start the server
 
@@ -79,15 +52,16 @@ To install nodemon globally:
 
 npm install -g nodemon
 
-
 ## 🧩 API Endpoints
 
-| Method | Endpoint            | Description              |
-| :----- | :------------------ | :----------------------- |
-| POST   | /api/expenses        | Add a new expense         |
-| GET    | /api/expenses        | Get all expenses          |
-| PUT    | /api/expenses/:id    | Update an expense         |
-| DELETE | /api/expenses/:id    | Delete an expense         |
+| Method | Endpoint                 | Description              |
+| :----- | :------------------------| :----------------------- |
+| POST   | /api/expenses            | Add a new expense        |
+| GET    | /api/expenses            | Get all expenses         |
+| PUT    | /api/expenses/:id        | Update an expense        |
+| PUT    | /api/expenses/delete/:id | Delete an expense        |
+| POST   | /api/user/register       | Register                 |
+| POST   | /api/user/login          | Login                    |
 
 ## 🛠️ Available Scripts
 In the project directory, you can run:
@@ -99,13 +73,3 @@ In the project directory, you can run:
 - **Mongoose** - MongoDB ODM
 - **dotenv** - Environment variable management
 - **cors** - Enable Cross-Origin Resource Sharing
-
----
-
-✅ This is your **Backend README**, clean and ready to paste into your `backend/README.md`.
-
----
-
-Would you also like a bonus tip on **how to submit** everything together properly with one small root-level README?  
-(only if you want — no pressure!) 🚀  
-Just tell me.
