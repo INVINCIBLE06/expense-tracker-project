@@ -2,13 +2,6 @@
 
 This repository contains the **full-stack Expense Tracker application**, including both frontend and backend code.
 
-## 📂 Folder Structure
-expense-tracker-project/
-│
-├── frontend/   # React.js Frontend
-├── backend/    # Node.js + Express.js Backend
-└── README.md   # Main project README (this file)
-
 ## 🚀 Tech Stack
 - Frontend: **React.js**
 - Backend: **Node.js**, **Express.js**
