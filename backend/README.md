@@ -56,10 +56,10 @@ npm install -g nodemon
 
 | Method | Endpoint                 | Description              |
 | :----- | :------------------------| :----------------------- |
-| POST   | /api/expenses            | Add a new expense        |
-| GET    | /api/expenses            | Get all expenses         |
-| PUT    | /api/expenses/:id        | Update an expense        |
-| PUT    | /api/expenses/delete/:id | Delete an expense        |
+| POST   | /api/exp                 | Add a new expense        |
+| GET    | /api/exp                 | Get all expenses         |
+| PUT    | /api/exp/:id             | Update an expense        |
+| PUT    | /api/exp/delete/:id      | Delete an expense        |
 | POST   | /api/user/register       | Register                 |
 | POST   | /api/user/login          | Login                    |
 
